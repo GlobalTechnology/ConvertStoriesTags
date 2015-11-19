@@ -1,0 +1,9 @@
+C:\Dev\GitHub\ConvertStoriesTags\ConvertStoriesTags\bin\Debug\ConvertStoriesTags.exe.config
+C:\Dev\GitHub\ConvertStoriesTags\ConvertStoriesTags\bin\Debug\ConvertStoriesTags.exe
+C:\Dev\GitHub\ConvertStoriesTags\ConvertStoriesTags\bin\Debug\ConvertStoriesTags.pdb
+C:\Dev\GitHub\ConvertStoriesTags\ConvertStoriesTags\bin\Debug\ConvertStoriesTags.xml
+C:\Dev\GitHub\ConvertStoriesTags\ConvertStoriesTags\obj\Debug\ConvertStoriesTags.Resources.resources
+C:\Dev\GitHub\ConvertStoriesTags\ConvertStoriesTags\obj\Debug\ConvertStoriesTags.vbproj.GenerateResource.Cache
+C:\Dev\GitHub\ConvertStoriesTags\ConvertStoriesTags\obj\Debug\ConvertStoriesTags.exe
+C:\Dev\GitHub\ConvertStoriesTags\ConvertStoriesTags\obj\Debug\ConvertStoriesTags.xml
+C:\Dev\GitHub\ConvertStoriesTags\ConvertStoriesTags\obj\Debug\ConvertStoriesTags.pdb

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="oib-ressources-publiques" EntityNamespace="stories" Class="storiesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQLEXPRESS;Initial Catalog=oib-ressources-publiques;Integrated Security=True" SettingsObjectName="ConvertStoriesTags.My.MySettings" SettingsPropertyName="oibConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AP_Stories_Module" Member="AP_Stories_Modules">
+    <Type Name="AP_Stories_Module">
+      <Column Name="StoryModuleId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TabModuleId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FilterType" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="FilterSetting1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FilterSetting2" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="FilterSetting3" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="MaxDisplayItems" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AP_Stories_Tag_Meta" Member="AP_Stories_Tag_Metas">
+    <Type Name="AP_Stories_Tag_Meta">
+      <Column Name="StoryTagMetaId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StoryId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TagId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AP_Stories" Member="AP_Stories">
+    <Type Name="AP_Story">
+      <Column Name="StoryId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Headline" Type="System.String" DbType="NVarChar(154) NOT NULL" CanBeNull="false" />
+      <Column Name="PhotoId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StoryText" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="StoryDate" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Author" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EditorBoost" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Editable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="RegionId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsVisible" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Sent" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PortalID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TabId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TabModuleId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Longitude" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Latitude" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TranslationGroup" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Language" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="Subtitle" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="TextSample" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Field1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Field2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Field3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Keywords" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AP_Stories_Tags" Member="AP_Stories_Tags">
+    <Type Name="AP_Stories_Tag">
+      <Column Name="StoryTagId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TagName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PortalId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Keywords" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Master" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="StoryModuleId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
